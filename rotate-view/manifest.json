@@ -1,0 +1,20 @@
+{
+  "name": "Hack Friends Rotate View",
+  "version": "1.0",
+  "description": "Hack your friends rotating the view in the browser",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "js": ["background.js"],
+    "matches": [
+      "http://*/*",
+      "https://*/*"
+    ]
+  }],
+  "icons": {
+    "16": "assets/duck-logo.png",
+    "32": "assets/duck-logo.png",
+    "48": "assets/duck-logo.png",
+    "128": "assets/duck-logo.png"
+  },
+  "permissions": ["activeTab"]
+}
